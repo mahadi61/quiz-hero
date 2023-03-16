@@ -187,3 +187,10 @@ document.querySelector("#submit").addEventListener("click", () =>{
   window.scrollTo(0, 0);
 
 });
+
+
+
+// blog page load click on button Blog
+const  blogPageLoad = () =>{
+window.location = 'blog.html';
+}
