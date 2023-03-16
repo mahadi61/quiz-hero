@@ -74,9 +74,8 @@ const displayQuiz = (data) => {
 };
 
 // EventListener for quiz submit button
-
-document.querySelector("#submit").addEventlistener("click", () => {
-  if (answers.length < 6) {
+document.querySelector("#submit").addEventListener("click", () =>{
+   if (answers.length < 6) {
     return;
   }
   quizTimer(true);
@@ -183,4 +182,5 @@ document.querySelector("#submit").addEventlistener("click", () => {
     clearTimeout(x);
   }, 1500);
   window.scrollTo(0, 0);
+
 });
